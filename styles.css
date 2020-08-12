@@ -1,0 +1,432 @@
+body{margin: 0;
+background-color: #11111d;
+color: #606470;}
+.navbar-color{
+    color: #c4d9d6 ;
+    font-weight: 1000;
+}
+.navbar-color1{
+    color:#c4d9d6;
+    margin-left: 1rem;
+    font-size: 1rem;
+
+}
+
+
+
+
+.navbar-color:hover,.navbar-color1:hover{
+    color: #13edd0;
+
+}
+#info{
+padding: 5% 15% 10%;
+line-height: 1.5;
+opacity: 0;
+}
+.info-animation{
+    animation-name: about-transition;
+    animation-duration: 2s;
+}
+
+
+@keyframes info-transition{
+    from{opacity: 0;
+    }
+    to{opacity: 1;
+    transform-origin: bottom;
+    }
+}
+
+.info{
+    width: 50%;
+    line-height: 1.5 ;
+    padding: 1rem auto;
+    font-size: 1.2rem;
+}
+.hi{
+    color: #13edd0;
+    font-size: 1rem;
+}
+h1{
+    padding: 1rem auto;
+    color: ivory;
+    opacity: 0.9;
+}
+#info h2{
+    padding: 1rem auto;
+    opacity: 0.8;
+    color: rgb(150, 168, 171);
+}
+
+#about{
+    padding: 5% 15% 10%;
+    color: #f2f4f7;
+    opacity: 0; 
+
+
+}
+
+.about-animation{
+    animation-name: about-transition;
+    animation-duration: 2s;
+}
+
+
+@keyframes about-transition{
+    from{opacity: 0;
+    }
+    to{opacity: 1;
+    transform-origin: bottom;
+    }
+}
+#about li{
+    margin-left: 1rem;
+    width: inherit;
+}
+.about-me-img{
+    height: 75%;
+   margin-top: 10%;
+    width: 75%;
+    opacity: 0.5;
+    background-image: url("images/code.jpg");
+    background-repeat:round ;
+    background-color: #13edd0;
+    background-blend-mode: multiply;
+}
+.about-me-img:hover{
+filter: inherit;
+height: 80%;
+opacity: 1;
+width: 80%;
+transition: 0.5s;
+background-blend-mode: initial;
+}
+
+
+
+
+.about-me-img-parent{
+    text-align: center;
+}
+
+#about h3, #experience h3,#projects h3{
+    overflow: hidden;
+    color: #13edd0;
+    text-align: left;
+    margin: 5% auto;
+  }
+#about p,#about td{
+    opacity: 0.8;
+}
+#about li::marker{
+    background-color: rgb(255, 133, 122);
+}
+  
+
+
+.intern-period{
+    font-weight: lighter;
+}
+  #about h3:after,#experience h3:after,#projects h3:after {
+    background-color: #13edd0;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+  }
+  #about h3:after,#experience h3:after, #projects h3:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+
+
+#experience{
+    padding: 5% 15% 20%;
+    color: whitesmoke;
+    opacity: 0;
+    line-height: 2;
+}
+.experience-animation{
+    animation-name: about-transition;
+    animation-duration: 2s;
+}
+
+
+@keyframes experience-transition{
+    from{opacity: 0;
+    }
+    to{opacity: 0.8;
+    transform-origin: bottom;
+    }
+}
+
+@media (max-width: 900px){
+    .about-me-img{
+        width: 50%;
+        height: 25%;
+
+    }
+    #about td{
+        width: max-content;
+    }
+
+}
+
+
+
+
+.work{width: 100%;
+line-height: 2;
+}
+
+.work-name{
+    background-color: #11111d ;
+    border: transparent;
+    color: azure;
+    width: inherit;
+    border-radius: 0%;
+
+}
+.active-button{
+    border-left: #13edd0 solid 0.3rem;
+    background-color: #5d5d6a;
+    border-radius: 0%;
+    
+}
+
+.work-name:hover{
+    background-color: #5d5d6a;
+}
+.work-name:focus{
+    
+    outline: none;
+}
+
+.none-display{
+    display: none;
+}
+.block-disply{
+    display: block;
+}
+
+#projects{
+    margin-top: 5%;
+    padding:1% 15% 10%;
+    background-color: #11111d;
+    text-align: center;
+    opacity: 0;
+   
+}
+.projects-animation{
+    animation-name: about-transition;
+    animation-duration: 2s;
+}
+
+
+@keyframes projects-transition{
+    from{opacity: 0;
+    }
+    to{opacity: 1;
+    transform-origin: bottom;
+    }
+}
+
+
+.simon{
+    height: 17rem;
+}
+.card{
+    width: 50%;
+    height: 50%;
+    border: 0 transparent;
+    background-color:#11111d ;
+    color: #ececec;
+    opacity: 0.9;
+}
+
+#contact{
+    padding: 5% 15% 15%;
+    text-align: center;
+    opacity: 0;
+}
+.contact-animation{
+    animation-name: about-transition;
+    animation-duration: 2s;
+}
+
+
+@keyframes contact-transition{
+    from{opacity: 0;
+    }
+    to{opacity: 1;
+    transform-origin: bottom;
+    }
+}
+
+
+
+.footer{
+    text-align: center;
+    padding-bottom: 1%;
+}
+.card-top-img{
+    background: #13edd0;
+    
+}
+.social-links{
+fill: #c4d9d6;
+
+}
+.social-links-parent{
+   margin-top: 1rem;
+}
+.social-links:hover{
+    fill:#13edd0;
+    transform:scale(1.2);
+
+    
+}
+
+.side{
+    text-align: center;
+    bottom: 0;
+    left: 2rem;
+    z-index: 10;
+    height: 40%;
+    width: 2rem;
+    position: fixed;
+
+    
+}
+
+#side-left{
+    opacity: 0;
+}
+#side-right{
+    opacity: 0;
+}
+
+.sideline::after {
+    
+    content: "";
+    display: block;
+    width: 10%;
+    height: 100%;
+    background-color: #c4d9d6;
+    margin: 0px auto; 
+}
+.side1{
+    text-align: center;
+    bottom: 0;
+    right: 1rem;
+    z-index: 10;
+    position: fixed;
+    display: block;
+    width: 2rem; 
+
+}
+
+.side1{
+    writing-mode: vertical-rl;
+text-orientation: mixed;
+font-size: 1rem;
+color: #c4d9d6  ;
+
+
+}
+.side1:hover,.side1:focus-within{
+    color:#13edd0;
+    text-decoration: none;
+    transform: translateY(1px);
+    transition: all 0.25s;
+    
+}
+
+.sideimg{
+    height: 1rem;
+    width: 1rem;
+
+    
+}
+
+h1{
+    font-size: 5rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+#contact h2{
+    padding: 2rem;
+    font-weight: bold;  
+    font-size: 4rem;
+    color: #13edd0;
+    opacity: 0.9;
+}
+#contact h4{
+    font-weight: bolder;
+    color: wheat;
+}
+#contact button{
+    margin: 5% auto auto auto;
+}
+#contact span{
+    color: #13edd0;
+}
+.contact-table{
+margin: auto;
+text-align: left;
+padding: 1rem;
+}
+.contact-table td{
+    padding: 0.2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #ececec;
+    opacity: 0.85;
+}
+.head{
+    opacity: 1;
+    font-weight: 1000;
+    font-size: 3rem;
+    margin-left: 2rem;
+    
+}
+.footer{
+    color: white;
+}
+.heading-intern{
+    font-weight: bold;
+}
+.peacock{
+    text-decoration: none;
+    color: #13edd0;
+}
+.peacock:hover{
+    text-decoration: underline;
+    color: #13edd0;
+}
+.triedge{
+    text-decoration: none;
+    color: #13edd0;
+}
+.triedge:hover{
+    text-decoration: underline;
+    color: #13edd0;
+}
+
+.position-fixed{
+    opacity: 1;
+    position: fixed;
+    width: 100%;
+    background-color: #11111d;
+    top:0;
+    z-index: 1;
+    
+    transition: all 500ms ease-in-out;
+    transform-origin: top;
+}
+
